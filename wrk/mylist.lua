@@ -6,7 +6,7 @@ cjson = require("cjson")
 --     -- body
 
 -- end
--- wrk -t1 -c5 -d2s --script=templatelist.lua https://t-www.meipian.cn/promo/music_cards/api/mycards
+-- wrk -t1 -c5 -d2s --script=mylist.lua https://t-www.meipian.cn/promo/music_cards/api/mycards
 badResponse = 0
 local  headers = {}
 headers["Content-Type"] = "application/x-www-form-urlencoded"

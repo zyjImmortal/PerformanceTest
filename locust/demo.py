@@ -1,4 +1,5 @@
 from locust import HttpLocust, TaskSet, task
+from unittest import TestCase
 #
 #
 # class Upload(TaskSet):
@@ -49,3 +50,16 @@ class MusicCardTask(TaskSet):
 class MusicCard(HttpLocust):
     host = 'https://t-www.meipian.cn'
     task_set = MusicCardTask
+
+
+class Demo(TestCase):
+
+    # def setUpClass(cls):
+    #     pass
+
+    def setUp(self):
+        pass
+
+    def test_demo(self):
+        reslur = self.assertEqual("3", "3", "两数相等")
+        print("======{}=====".format(reslur))
